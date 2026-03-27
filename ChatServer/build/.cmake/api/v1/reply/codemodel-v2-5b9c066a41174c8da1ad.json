@@ -1,0 +1,186 @@
+{
+	"configurations" : 
+	[
+		{
+			"abstractTargets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Boost::boost::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Boost__boost-Debug-255c0b4bed75d48145d3.json",
+					"name" : "Boost::boost",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Boost::diagnostic_definitions::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Boost__diagnostic_definitions-Debug-d5018f2fc3e76c17cfaa.json",
+					"name" : "Boost::diagnostic_definitions",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Boost::disable_autolinking::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Boost__disable_autolinking-Debug-cf0d7f9f0b26483895da.json",
+					"name" : "Boost::disable_autolinking",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Boost::dynamic_linking::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Boost__dynamic_linking-Debug-7ee187f810a01bc53a0d.json",
+					"name" : "Boost::dynamic_linking",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Boost::headers::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Boost__headers-Debug-f46a4fe8266dfb8b42b1.json",
+					"name" : "Boost::headers",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "PkgConfig::ABSL::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-PkgConfig__ABSL-Debug-699b6515fee2a0930a1d.json",
+					"name" : "PkgConfig::ABSL",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "PkgConfig::GRPC::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-PkgConfig__GRPC-Debug-81cd4a91cc59ee05ff13.json",
+					"name" : "PkgConfig::GRPC",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "PkgConfig::GRPCPP::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-PkgConfig__GRPCPP-Debug-dacbefed0416525fbdef.json",
+					"name" : "PkgConfig::GRPCPP",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "PkgConfig::JSON::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-PkgConfig__JSON-Debug-aa33215118932723f43d.json",
+					"name" : "PkgConfig::JSON",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "PkgConfig::MYSQL::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-PkgConfig__MYSQL-Debug-218fa02b828655d812d7.json",
+					"name" : "PkgConfig::MYSQL",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "PkgConfig::PROTOBUF::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-PkgConfig__PROTOBUF-Debug-264d538a7d78e2ff7268.json",
+					"name" : "PkgConfig::PROTOBUF",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "PkgConfig::REDIS::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-PkgConfig__REDIS-Debug-2177e2e52f92b448c5d7.json",
+					"name" : "PkgConfig::REDIS",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "PkgConfig::SPEEDLOG::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-PkgConfig__SPEEDLOG-Debug-1e9d59444eb5083b741f.json",
+					"name" : "PkgConfig::SPEEDLOG",
+					"projectIndex" : 0
+				}
+			],
+			"directories" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12
+					],
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-9ad1a58d4644cf6543fa.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.0"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "ChatServer",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ChatServer::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ChatServer-Debug-5cd1f0c9f749ae24f39b.json",
+					"name" : "ChatServer",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/vivek/Codes/Qt/ChatServer/build",
+		"source" : "/home/vivek/Codes/Qt/ChatServer"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 9
+	}
+}

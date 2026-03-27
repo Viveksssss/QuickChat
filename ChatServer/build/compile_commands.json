@@ -1,0 +1,110 @@
+[
+{
+  "directory": "/home/vivek/Codes/Qt/ChatServer/build",
+  "command": "/usr/bin/g++ -isystem /usr/include/hiredis -isystem /usr/include/mysql -g -std=gnu++20 -pthread -DNOMINMAX -DPROTOBUF_USE_DLLS -D_FILE_OFFSET_BITS=64 -DSPDLOG_SHARED_LIB -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -o CMakeFiles/ChatServer.dir/main.cpp.o -c /home/vivek/Codes/Qt/ChatServer/main.cpp",
+  "file": "/home/vivek/Codes/Qt/ChatServer/main.cpp",
+  "output": "/home/vivek/Codes/Qt/ChatServer/build/CMakeFiles/ChatServer.dir/main.cpp.o"
+},
+{
+  "directory": "/home/vivek/Codes/Qt/ChatServer/build",
+  "command": "/usr/bin/g++ -isystem /usr/include/hiredis -isystem /usr/include/mysql -g -std=gnu++20 -pthread -DNOMINMAX -DPROTOBUF_USE_DLLS -D_FILE_OFFSET_BITS=64 -DSPDLOG_SHARED_LIB -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -o CMakeFiles/ChatServer.dir/grpc/message.grpc.pb.cc.o -c /home/vivek/Codes/Qt/ChatServer/grpc/message.grpc.pb.cc",
+  "file": "/home/vivek/Codes/Qt/ChatServer/grpc/message.grpc.pb.cc",
+  "output": "/home/vivek/Codes/Qt/ChatServer/build/CMakeFiles/ChatServer.dir/grpc/message.grpc.pb.cc.o"
+},
+{
+  "directory": "/home/vivek/Codes/Qt/ChatServer/build",
+  "command": "/usr/bin/g++ -isystem /usr/include/hiredis -isystem /usr/include/mysql -g -std=gnu++20 -pthread -DNOMINMAX -DPROTOBUF_USE_DLLS -D_FILE_OFFSET_BITS=64 -DSPDLOG_SHARED_LIB -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -Wno-unused-variable -Wno-deprecated -o CMakeFiles/ChatServer.dir/grpc/message.pb.cc.o -c /home/vivek/Codes/Qt/ChatServer/grpc/message.pb.cc",
+  "file": "/home/vivek/Codes/Qt/ChatServer/grpc/message.pb.cc",
+  "output": "/home/vivek/Codes/Qt/ChatServer/build/CMakeFiles/ChatServer.dir/grpc/message.pb.cc.o"
+},
+{
+  "directory": "/home/vivek/Codes/Qt/ChatServer/build",
+  "command": "/usr/bin/g++ -isystem /usr/include/hiredis -isystem /usr/include/mysql -g -std=gnu++20 -pthread -DNOMINMAX -DPROTOBUF_USE_DLLS -D_FILE_OFFSET_BITS=64 -DSPDLOG_SHARED_LIB -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -o CMakeFiles/ChatServer.dir/grpc/StatusClient.cpp.o -c /home/vivek/Codes/Qt/ChatServer/grpc/StatusClient.cpp",
+  "file": "/home/vivek/Codes/Qt/ChatServer/grpc/StatusClient.cpp",
+  "output": "/home/vivek/Codes/Qt/ChatServer/build/CMakeFiles/ChatServer.dir/grpc/StatusClient.cpp.o"
+},
+{
+  "directory": "/home/vivek/Codes/Qt/ChatServer/build",
+  "command": "/usr/bin/g++ -isystem /usr/include/hiredis -isystem /usr/include/mysql -g -std=gnu++20 -pthread -DNOMINMAX -DPROTOBUF_USE_DLLS -D_FILE_OFFSET_BITS=64 -DSPDLOG_SHARED_LIB -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -o CMakeFiles/ChatServer.dir/global/const.cpp.o -c /home/vivek/Codes/Qt/ChatServer/global/const.cpp",
+  "file": "/home/vivek/Codes/Qt/ChatServer/global/const.cpp",
+  "output": "/home/vivek/Codes/Qt/ChatServer/build/CMakeFiles/ChatServer.dir/global/const.cpp.o"
+},
+{
+  "directory": "/home/vivek/Codes/Qt/ChatServer/build",
+  "command": "/usr/bin/g++ -isystem /usr/include/hiredis -isystem /usr/include/mysql -g -std=gnu++20 -pthread -DNOMINMAX -DPROTOBUF_USE_DLLS -D_FILE_OFFSET_BITS=64 -DSPDLOG_SHARED_LIB -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -o CMakeFiles/ChatServer.dir/global/UserManager.cpp.o -c /home/vivek/Codes/Qt/ChatServer/global/UserManager.cpp",
+  "file": "/home/vivek/Codes/Qt/ChatServer/global/UserManager.cpp",
+  "output": "/home/vivek/Codes/Qt/ChatServer/build/CMakeFiles/ChatServer.dir/global/UserManager.cpp.o"
+},
+{
+  "directory": "/home/vivek/Codes/Qt/ChatServer/build",
+  "command": "/usr/bin/g++ -isystem /usr/include/hiredis -isystem /usr/include/mysql -g -std=gnu++20 -pthread -DNOMINMAX -DPROTOBUF_USE_DLLS -D_FILE_OFFSET_BITS=64 -DSPDLOG_SHARED_LIB -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -o CMakeFiles/ChatServer.dir/grpc/ChatGrpcClient.cpp.o -c /home/vivek/Codes/Qt/ChatServer/grpc/ChatGrpcClient.cpp",
+  "file": "/home/vivek/Codes/Qt/ChatServer/grpc/ChatGrpcClient.cpp",
+  "output": "/home/vivek/Codes/Qt/ChatServer/build/CMakeFiles/ChatServer.dir/grpc/ChatGrpcClient.cpp.o"
+},
+{
+  "directory": "/home/vivek/Codes/Qt/ChatServer/build",
+  "command": "/usr/bin/g++ -isystem /usr/include/hiredis -isystem /usr/include/mysql -g -std=gnu++20 -pthread -DNOMINMAX -DPROTOBUF_USE_DLLS -D_FILE_OFFSET_BITS=64 -DSPDLOG_SHARED_LIB -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -o CMakeFiles/ChatServer.dir/grpc/ChatGrpcServer.cpp.o -c /home/vivek/Codes/Qt/ChatServer/grpc/ChatGrpcServer.cpp",
+  "file": "/home/vivek/Codes/Qt/ChatServer/grpc/ChatGrpcServer.cpp",
+  "output": "/home/vivek/Codes/Qt/ChatServer/build/CMakeFiles/ChatServer.dir/grpc/ChatGrpcServer.cpp.o"
+},
+{
+  "directory": "/home/vivek/Codes/Qt/ChatServer/build",
+  "command": "/usr/bin/g++ -isystem /usr/include/hiredis -isystem /usr/include/mysql -g -std=gnu++20 -pthread -DNOMINMAX -DPROTOBUF_USE_DLLS -D_FILE_OFFSET_BITS=64 -DSPDLOG_SHARED_LIB -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -o CMakeFiles/ChatServer.dir/server/AsioPool.cpp.o -c /home/vivek/Codes/Qt/ChatServer/server/AsioPool.cpp",
+  "file": "/home/vivek/Codes/Qt/ChatServer/server/AsioPool.cpp",
+  "output": "/home/vivek/Codes/Qt/ChatServer/build/CMakeFiles/ChatServer.dir/server/AsioPool.cpp.o"
+},
+{
+  "directory": "/home/vivek/Codes/Qt/ChatServer/build",
+  "command": "/usr/bin/g++ -isystem /usr/include/hiredis -isystem /usr/include/mysql -g -std=gnu++20 -pthread -DNOMINMAX -DPROTOBUF_USE_DLLS -D_FILE_OFFSET_BITS=64 -DSPDLOG_SHARED_LIB -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -o CMakeFiles/ChatServer.dir/server/Server.cpp.o -c /home/vivek/Codes/Qt/ChatServer/server/Server.cpp",
+  "file": "/home/vivek/Codes/Qt/ChatServer/server/Server.cpp",
+  "output": "/home/vivek/Codes/Qt/ChatServer/build/CMakeFiles/ChatServer.dir/server/Server.cpp.o"
+},
+{
+  "directory": "/home/vivek/Codes/Qt/ChatServer/build",
+  "command": "/usr/bin/g++ -isystem /usr/include/hiredis -isystem /usr/include/mysql -g -std=gnu++20 -pthread -DNOMINMAX -DPROTOBUF_USE_DLLS -D_FILE_OFFSET_BITS=64 -DSPDLOG_SHARED_LIB -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -o CMakeFiles/ChatServer.dir/server/LogicSystem.cpp.o -c /home/vivek/Codes/Qt/ChatServer/server/LogicSystem.cpp",
+  "file": "/home/vivek/Codes/Qt/ChatServer/server/LogicSystem.cpp",
+  "output": "/home/vivek/Codes/Qt/ChatServer/build/CMakeFiles/ChatServer.dir/server/LogicSystem.cpp.o"
+},
+{
+  "directory": "/home/vivek/Codes/Qt/ChatServer/build",
+  "command": "/usr/bin/g++ -isystem /usr/include/hiredis -isystem /usr/include/mysql -g -std=gnu++20 -pthread -DNOMINMAX -DPROTOBUF_USE_DLLS -D_FILE_OFFSET_BITS=64 -DSPDLOG_SHARED_LIB -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -o CMakeFiles/ChatServer.dir/session/Session.cpp.o -c /home/vivek/Codes/Qt/ChatServer/session/Session.cpp",
+  "file": "/home/vivek/Codes/Qt/ChatServer/session/Session.cpp",
+  "output": "/home/vivek/Codes/Qt/ChatServer/build/CMakeFiles/ChatServer.dir/session/Session.cpp.o"
+},
+{
+  "directory": "/home/vivek/Codes/Qt/ChatServer/build",
+  "command": "/usr/bin/g++ -isystem /usr/include/hiredis -isystem /usr/include/mysql -g -std=gnu++20 -pthread -DNOMINMAX -DPROTOBUF_USE_DLLS -D_FILE_OFFSET_BITS=64 -DSPDLOG_SHARED_LIB -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -o CMakeFiles/ChatServer.dir/session/MsgNode.cpp.o -c /home/vivek/Codes/Qt/ChatServer/session/MsgNode.cpp",
+  "file": "/home/vivek/Codes/Qt/ChatServer/session/MsgNode.cpp",
+  "output": "/home/vivek/Codes/Qt/ChatServer/build/CMakeFiles/ChatServer.dir/session/MsgNode.cpp.o"
+},
+{
+  "directory": "/home/vivek/Codes/Qt/ChatServer/build",
+  "command": "/usr/bin/g++ -isystem /usr/include/hiredis -isystem /usr/include/mysql -g -std=gnu++20 -pthread -DNOMINMAX -DPROTOBUF_USE_DLLS -D_FILE_OFFSET_BITS=64 -DSPDLOG_SHARED_LIB -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -o CMakeFiles/ChatServer.dir/data/im.pb.cc.o -c /home/vivek/Codes/Qt/ChatServer/data/im.pb.cc",
+  "file": "/home/vivek/Codes/Qt/ChatServer/data/im.pb.cc",
+  "output": "/home/vivek/Codes/Qt/ChatServer/build/CMakeFiles/ChatServer.dir/data/im.pb.cc.o"
+},
+{
+  "directory": "/home/vivek/Codes/Qt/ChatServer/build",
+  "command": "/usr/bin/g++ -isystem /usr/include/hiredis -isystem /usr/include/mysql -g -std=gnu++20 -pthread -DNOMINMAX -DPROTOBUF_USE_DLLS -D_FILE_OFFSET_BITS=64 -DSPDLOG_SHARED_LIB -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -o CMakeFiles/ChatServer.dir/redis/RedisManager.cpp.o -c /home/vivek/Codes/Qt/ChatServer/redis/RedisManager.cpp",
+  "file": "/home/vivek/Codes/Qt/ChatServer/redis/RedisManager.cpp",
+  "output": "/home/vivek/Codes/Qt/ChatServer/build/CMakeFiles/ChatServer.dir/redis/RedisManager.cpp.o"
+},
+{
+  "directory": "/home/vivek/Codes/Qt/ChatServer/build",
+  "command": "/usr/bin/g++ -isystem /usr/include/hiredis -isystem /usr/include/mysql -g -std=gnu++20 -pthread -DNOMINMAX -DPROTOBUF_USE_DLLS -D_FILE_OFFSET_BITS=64 -DSPDLOG_SHARED_LIB -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -o CMakeFiles/ChatServer.dir/mysql/MysqlManager.cpp.o -c /home/vivek/Codes/Qt/ChatServer/mysql/MysqlManager.cpp",
+  "file": "/home/vivek/Codes/Qt/ChatServer/mysql/MysqlManager.cpp",
+  "output": "/home/vivek/Codes/Qt/ChatServer/build/CMakeFiles/ChatServer.dir/mysql/MysqlManager.cpp.o"
+},
+{
+  "directory": "/home/vivek/Codes/Qt/ChatServer/build",
+  "command": "/usr/bin/g++ -isystem /usr/include/hiredis -isystem /usr/include/mysql -g -std=gnu++20 -pthread -DNOMINMAX -DPROTOBUF_USE_DLLS -D_FILE_OFFSET_BITS=64 -DSPDLOG_SHARED_LIB -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -o CMakeFiles/ChatServer.dir/mysql/MysqlDao.cpp.o -c /home/vivek/Codes/Qt/ChatServer/mysql/MysqlDao.cpp",
+  "file": "/home/vivek/Codes/Qt/ChatServer/mysql/MysqlDao.cpp",
+  "output": "/home/vivek/Codes/Qt/ChatServer/build/CMakeFiles/ChatServer.dir/mysql/MysqlDao.cpp.o"
+},
+{
+  "directory": "/home/vivek/Codes/Qt/ChatServer/build",
+  "command": "/usr/bin/g++ -isystem /usr/include/hiredis -isystem /usr/include/mysql -g -std=gnu++20 -pthread -DNOMINMAX -DPROTOBUF_USE_DLLS -D_FILE_OFFSET_BITS=64 -DSPDLOG_SHARED_LIB -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -o CMakeFiles/ChatServer.dir/redis/DistributedLock.cpp.o -c /home/vivek/Codes/Qt/ChatServer/redis/DistributedLock.cpp",
+  "file": "/home/vivek/Codes/Qt/ChatServer/redis/DistributedLock.cpp",
+  "output": "/home/vivek/Codes/Qt/ChatServer/build/CMakeFiles/ChatServer.dir/redis/DistributedLock.cpp.o"
+}
+]

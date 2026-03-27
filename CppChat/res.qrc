@@ -1,0 +1,46 @@
+<RCC>
+    <qresource prefix="/icons"/>
+    <qresource prefix="/">
+        <file>Styles/stylesheetBlue.qss</file>
+        <file>Styles/stylesheetDark.qss</file>
+        <file>Styles/stylesheetLight.qss</file>
+        <file>Resources/login/checked-hover.png</file>
+        <file>Resources/login/checked.png</file>
+        <file>Resources/login/close-hover.png</file>
+        <file>Resources/login/close.png</file>
+        <file>Resources/login/loginBackground.png</file>
+        <file>Resources/login/nosee-hover.png</file>
+        <file>Resources/login/nosee.png</file>
+        <file>Resources/login/QQ.png</file>
+        <file>Resources/login/see-hover.png</file>
+        <file>Resources/login/see.png</file>
+        <file>Resources/login/unchecked-hover.png</file>
+        <file>Resources/login/unchecked.png</file>
+        <file>Resources/main/logo.png</file>
+        <file>Resources/main/friends.png</file>
+        <file>Resources/main/message.png</file>
+        <file>Resources/main/add.png</file>
+        <file>Resources/main/find.png</file>
+        <file>Resources/main/news.png</file>
+        <file>Resources/main/unfold.png</file>
+        <file>Resources/main/file.png</file>
+        <file>Resources/main/emoji.png</file>
+        <file>Resources/main/picture.png</file>
+        <file>Resources/main/capture.png</file>
+        <file>Resources/main/clear.png</file>
+        <file>Resources/main/clear-hover.png</file>
+        <file>Resources/main/loading.gif</file>
+        <file>Resources/main/header.png</file>
+        <file>Resources/main/header-0.png</file>
+        <file>Resources/main/video.png</file>
+        <file>Resources/main/audio.png</file>
+        <file>Resources/main/stop.png</file>
+        <file>Resources/main/play.png</file>
+        <file>Resources/main/volume.png</file>
+        <file>Resources/main/no-volume.png</file>
+        <file>Resources/main/header-default.png</file>
+        <file>Resources/main/audio_chat.png</file>
+        <file>Resources/main/text_chat.png</file>
+        <file>Resources/main/video_chat.png</file>
+    </qresource>
+</RCC>

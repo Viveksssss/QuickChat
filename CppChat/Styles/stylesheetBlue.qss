@@ -1,0 +1,811 @@
+QWidget{
+  color:black;
+}
+
+
+#loginScreen {
+  border-image: url(:/Resources/login/loginBackground.png) 0 0 0 0 stretch stretch;
+}
+
+#headerLabel {
+border: 2px solid #E0E0E0;
+        border-radius: 40px;
+background: #F8F8F8;
+}
+
+#accountEdit, #passwordEdit {
+border: 0px;
+        border-radius: 8px;
+}
+
+#agreeCheck {
+  font-size: 10px;
+color: #7e7f81;
+}
+
+#agreeCheck::indicator {
+width: 16px;
+height: 16px;
+}
+
+#agreeCheck::indicator:unchecked {
+image: url(:/Resources/login/unchecked.png);
+}
+
+#agreeCheck::indicator:checked {
+image: url(:/Resources/login/checked.png);
+}
+
+#agreeCheck::indicator:unchecked:hover {
+image: url(:/Resources/login/unchecked-hover.png);
+}
+
+#agreeCheck::indicator:checked:hover {
+image: url(:/Resources/login/checked-hover.png);
+}
+
+#loginBtn {
+  text-align: center;
+  border-radius: 8px;
+  background-color: #129dd9;
+color: #f9faf0;
+       font-size: 14px;
+}
+
+#loginBtn:hover {
+  text-align: center;
+  border-radius: 8px;
+  background-color: #48b2e5;
+  color: #cefdec;
+      font-size: 14px;
+}
+
+#loginBtn:pressed {
+  text-align: center;
+  border-radius: 8px;
+  background-color: #034ec4;
+  color: #cefdec;
+  font-size: 14px;
+}
+
+#registerBtn1 {
+  background-color: transparent;
+border: none;
+color: #12a1d9;
+       font-weight: bold;
+}
+
+#registerBtn1:hover {
+  background-color: transparent;
+border: none;
+color: #d3509b;
+       font-weight: bold;
+}
+
+#forgotLabel {
+  background-color: transparent;
+border: none;
+color: #12a1d9;
+       font-weight: bold;
+}
+
+#forgotLabel:hover {
+  background-color: transparent;
+border: none;
+color: #d91288;
+       font-weight: bold;
+}
+#registerScreen {
+  border-image: url(:/Resources/login/loginBackground.png) 0 0 0 0 stretch stretch;
+}
+
+#headerLabel {
+border: 2px solid #E0E0E0;
+        border-radius: 40px;
+background: #F8F8F8;
+}
+
+#accountEdit, #emailEdit, #passwordEdit, #passwordSure, #securityCode {
+border: 0px;
+        border-radius: 8px;
+}
+
+#getSecurityCode {
+  text-align: center;
+width: 50px;
+height: 27px;
+        border-radius: 5px;
+        background-color: #c5ddd7;
+color: #f9faf0;
+       font-size: 14px;
+}
+
+#getSecurityCode:hover {
+  text-align: center;
+  border-radius: 5px;
+  background-color: #bdc284;
+color: #cefdec;
+       font-size: 14px;
+}
+
+#getSecurityCode:pressed {
+  text-align: center;
+  border-radius: 5px;
+  background-color: #ebeec9;
+color: #cefdec;
+       font-size: 14px;
+}
+
+#registerBtn2, #cancelBtn {
+  text-align: center;
+  border-radius: 5px;
+  background-color: #129dd9;
+color: #f9faf0;
+       font-size: 15px;
+}
+
+#registerBtn2:hover, #cancelBtn:hover {
+  text-align: center;
+  border-radius: 5px;
+  background-color: #48b2e5;
+color: #cefdec;
+       font-size: 15px;
+}
+
+#registerBtn2:pressed, #cancelBtn:pressed {
+  text-align: center;
+  border-radius: 5px;
+  background-color: #034ec4;
+color: #cefdec;
+       font-size: 15px;
+}
+#closeBtn{
+  image: url(:/Resources/login/close.png);
+}
+#closeBtn:hover{
+  image: url(:/Resources/login/close-hover.png);
+}
+#registerTitle[state='normal']{
+  font-size:16px;
+  color:#0cb800;
+}
+#registerTitle[state='error']{
+  font-size:16px;
+  color:#ff302e;
+}
+QToolTip {
+  border-radius: 6px;
+  color:#b82800;
+}
+
+#ForgotScreen{
+  border-image: url(:/Resources/login/loginBackground.png) 0 0 0 0 stretch stretch;
+}
+
+
+
+#msgBox {
+    background: white;
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
+    font-family: "Microsoft YaHei", "PingFang SC";
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#msgBox QLabel {
+    color: #475569;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 16px 20px;
+    background: transparent;
+    line-height: 1.4;
+    text-align: center;
+}
+
+#msgBox QDialogButtonBox {
+    background: #F8FAFC;
+    border-top: 1px solid #F1F5F9;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 10px 20px;
+}
+
+#msgBox QPushButton {
+    background: #3B82F6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 6px 16px;
+    font-size: 12px;
+    font-weight: 600;
+    min-width: 60px;
+    min-height: 28px;
+}
+
+#msgBox QPushButton:hover {
+    background: #2563EB;
+}
+
+#msgBox QPushButton:pressed {
+    background: #1D4ED8;
+}
+
+
+#labelForHeader[state='normal']{
+  font-size:16px;
+  color:#0cb800;
+}
+#labelForHeader[state='error']{
+  font-size:16px;
+  color:#ff302e;
+}
+
+
+/* 忘记密码界面样式 */
+#FotgotScreen {
+  border-image: url(:/Resources/login/loginBackground.png) 0 0 0 0 stretch stretch;
+}
+
+#headerLabel {
+  border: 2px solid #E0E0E0;
+  border-radius: 40px;
+  background: #F8F8F8;
+  border-image: url(:/Resources/login/QQ.png) 0 0 0 0 stretch stretch;
+}
+
+#labelForHeader[state='normal']{
+  font-size:16px;
+  color:#0cb800;
+}
+
+#labelForHeader[state='error']{
+  font-size:16px;
+  color:#ff302e;
+}
+
+/* 输入框样式 */
+#accountEdit, #emailEdit, #securityCode, #newPasswordEdit, #confirmNewPasswordEdit {
+  border: 0px;
+  border-radius: 8px;
+}
+
+/* 验证码获取按钮 */
+#getSecurityCode {
+  text-align: center;
+  width: 80px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #c5ddd7;
+  color: #f9faf0;
+  font-size: 12px;
+}
+
+#getSecurityCode:hover {
+  text-align: center;
+  border-radius: 5px;
+  background-color: #bdc284;
+  color: #cefdec;
+  font-size: 12px;
+}
+
+#getSecurityCode:pressed {
+  text-align: center;
+  border-radius: 5px;
+  background-color: #ebeec9;
+  color: #cefdec;
+  font-size: 12px;
+}
+
+/* 密码显示/隐藏按钮 */
+#showNewPwdAction, #showConfirmPwdAction {
+  background: transparent;
+  border: none;
+}
+
+/* 确定和取消按钮 */
+#acceptBtn, #cancleBtn {
+  text-align: center;
+  border-radius: 5px;
+  background-color: #129dd9;
+  color: #f9faf0;
+  font-size: 15px;
+}
+
+#acceptBtn:hover, #cancleBtn:hover {
+  text-align: center;
+  border-radius: 5px;
+  background-color: #48b2e5;
+  color: #cefdec;
+  font-size: 15px;
+}
+
+#acceptBtn:pressed, #cancleBtn:pressed {
+  text-align: center;
+  border-radius: 5px;
+  background-color: #034ec4;
+  color: #cefdec;
+  font-size: 15px;
+}
+
+/* 工具提示样式 */
+QToolTip {
+  border-radius: 6px;
+  color:#b82800;
+}
+
+#logo{
+  border-image: url(:/Resources/main/logo.png) 0 0 0 0 stretch stretch;
+}
+
+#logoTitle{
+  font-size:20px;
+  color:#187fc9;
+}
+
+#friendsList{
+  background-color:white;
+  border:none;
+  outline:one;
+  border-radius:8px;
+}
+#friendsList::item{
+  border:1px;
+}
+
+#messagesList{
+  background-color:white;
+  border:none;
+  outline:one;
+  border-radius:8px;
+}
+#messagesList::item{
+  border:1px;
+}
+
+
+#findButton{
+  background:transparent;
+  border:0px;
+}
+
+#findButton:hover{
+  background:#bde0d5;
+  border:1px #e8e7de;
+  border-radius:8px;
+}
+
+#findButton:pressed{
+  background:#34eae8;
+  border-radius:8px;
+}
+
+
+
+#newsBtn{
+  background:transparent;
+  border:0px;
+}
+
+#newsBtn:hover{
+  background:#bde0d5;
+  border:1px #e8e7de;
+  border-radius:8px;
+}
+
+#newsBtn:pressed{
+  background:#34eae8;
+  border-radius:8px;
+}
+
+
+#foldBtn{
+  background:transparent;
+  border:0px;
+}
+
+#foldBtn:hover{
+  background:#bde0d5;
+  border:1px #e8e7de;
+  border-radius:8px;
+}
+
+#foldBtn:pressed{
+  background:#34eae8;
+  border-radius:8px;
+}
+
+#textEdit{
+  background:transparent;
+  border-radius:20px;
+}
+
+#textEdit QScrollBar:vertical, QScrollBar:vertical {
+    background: #f5f5f5;
+    width:3px;
+    border-radius:5px;
+}
+
+QScrollBar::handle:vertical {
+    background: #f8d6c4;
+    border-radius:5px;
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    border: none;
+    background: none;
+    height: 0px;
+}
+
+
+#emojiMenu{
+  border-radius:15px;
+  background:#f0f2de;
+}
+
+#fileButton{
+  background:transparent;
+  border:0px;
+}
+
+#fileButton:hover{
+  background:#bde0d5;
+  border:1px #e8e7de;
+  border-radius:8px;
+}
+
+#fileButton:pressed{
+  background:#34eae8;
+  border-radius:8px;
+}
+
+
+#imageButton{
+  background:transparent;
+  border:0px;
+}
+
+#imageButton:hover{
+  background:#bde0d5;
+  border:1px #e8e7de;
+  border-radius:8px;
+}
+
+#imageButton:pressed{
+  background:#34eae8;
+  border-radius:8px;
+}
+
+#videoButton{
+  background:transparent;
+  border:0px;
+}
+
+#videoButton:hover{
+  background:#bde0d5;
+  border:1px #e8e7de;
+  border-radius:8px;
+}
+
+#videoButton:pressed{
+  background:#34eae8;
+  border-radius:8px;
+}
+
+#audioButton{
+  background:transparent;
+  border:0px;
+}
+
+#audioButton:hover{
+  background:#bde0d5;
+  border:1px #e8e7de;
+  border-radius:8px;
+}
+
+#audioButton:pressed{
+  background:#34eae8;
+  border-radius:8px;
+}
+
+#emojiButton{
+  background:transparent;
+  border:0px;
+}
+
+#emojiButton:hover{
+  background:#bde0d5;
+  border:1px #e8e7de;
+  border-radius:8px;
+}
+
+#emojiButton:pressed{
+  background:#34eae8;
+  border-radius:8px;
+}
+
+#emojiButton::menu-indicator {
+    image: none;
+    width: 0px;
+    height: 0px;
+    subcontrol-position: center center;
+}
+
+#captureButton{
+  background:transparent;
+  border:0px;
+}
+
+#captureButton:hover{
+  background:#bde0d5;
+  border:1px #e8e7de;
+  border-radius:8px;
+}
+
+#captureButton:pressed{
+  background:#34eae8;
+  border-radius:8px;
+}
+
+
+#sendButton{
+  background:#970ad1;
+  border:0px;
+  border-radius:8px;
+  color:white;
+}
+
+#sendButton:hover{
+  background:#bde0d5;
+  border:1px #e8e7de;
+  border-radius:8px;
+}
+
+#splitter::handle{
+  background-color:#ebf0f5;
+}
+
+#searchEdit{
+  background:white;
+  border:1px solid #ddd;
+  border-radius:8px;
+  padding:0px 12px;
+  font-size:14px;
+}
+
+#searchEdit:focus{
+  border-color:#2196F3;
+}
+
+#searchButton{
+  background:transparent;
+  border-radius:5px;
+}
+
+
+#searchButton:hover{
+  background:#f4d4f7;
+}
+
+#searchButton:pressed{
+  background:#f4d4f7;
+}
+
+#resultList {
+ background: #fafdff;
+ border: 1px solid #ddd;
+ border-radius: 8px;
+ outline: none;
+ padding:10px 0px;
+}
+#resultListList::item {
+    padding: 10px;
+    border-bottom: 1px solid #f0f0f0;
+    margin-left: 10px;
+    margin-right: 10px;
+    height:40px;
+}
+#resultList::item:hover {
+    background: #c9d0d4;
+    border-radius:10px;
+    margin-left:5px;
+    margin-right:5px;
+}
+#resultList::item:selected {
+    background: #e3f2fd;
+    color: #1976D2;
+    border-radius:10px;
+    margin-left:5px;
+    margin-right:5px;
+}
+
+/* FriendAddDialog.qss */
+
+#friendAddDialog {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+}
+
+#titleLabel {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+    padding: 0px;
+    margin: 0px;
+}
+
+#userInfoFrame {
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 10px;
+    margin: 5px 0px;
+}
+
+#avatarLabel {
+    border-radius: 8px;
+    border: 2px solid #ffffff;
+}
+
+#nameLabel {
+    font-size: 16px;
+    font-weight: 600;
+    color: #212529;
+    margin: 0px;
+    padding: 0px;
+}
+
+#uidLabel {
+    font-size: 13px;
+    color: #6c757d;
+    margin: 0px;
+    padding: 0px;
+}
+
+#remarkLabel {
+    font-size: 14px;
+    font-weight: 500;
+    color: #495057;
+    margin: 5px 0px;
+    padding: 0px;
+}
+
+#remarkEdit {
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    padding: 8px;
+    font-size: 14px;
+    background-color: #ffffff;
+    margin: 0px;
+}
+
+#remarkEdit:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+#addButton {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0px;
+}
+
+#addButton:hover {
+    background-color: #0056b3;
+}
+
+#cancelButton {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0px;
+}
+
+#cancelButton:hover {
+    background-color: #545b62;
+}
+
+
+/* 针对 newsList 的样式 */
+QListWidget#newsList {
+    border: 1px solid #CCCCCC;
+    background-color: white;
+    border-radius: 5px;
+    outline: none;
+    font-family: "Microsoft YaHei", "Segoe UI", sans-serif;
+}
+
+QListWidget#newsList::item {
+    padding: 8px;
+    border-bottom: 1px solid #F0F0F0;
+    background-color: transparent;
+}
+
+QListWidget#newsList::item:hover {
+    background-color: #F5F5F5;
+}
+
+QListWidget#newsList::item:selected {
+    background-color: #E3F2FD;
+    color: #1976D2;
+}
+
+
+#FriendsNewItem_NameLabel{
+  color: #333333;
+  font-weight: bold;
+  font-size: 14px;
+  margin-left:5px;
+}
+#FriendsNewsItem_ContentLabel{
+  color: #666666;
+  font-size: 12px;
+  margin-bottom:10px;
+  margin-left:5px;
+}
+
+#FriendsNewsItem_AcceptButton{
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-bottom:2px;
+}
+
+#FriendsNewsItem_AcceptButton:hover{
+  background-color: #45a049;
+}
+
+#FriendsNewsItem_RejectButton{
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-bottom:2px;
+}
+#FriendsNewsItem_RejectButton:hover {
+    background-color: #da190b;
+}
+
+
+#NotificationPanel {
+    background: #F8F8FF;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    outline:none;
+}
+#NotificationPanel QLabel {
+    color: #333333;
+    font-weight: bold;
+    font-size: 14px;
+    background-color: transparent;
+    padding-left:20px;
+}
+#NotificationPanel QListWidget {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+#NotificationPanel QListWidget::item {
+    border-bottom: 1px solid #F0F0F0;
+    background-color: transparent;
+    padding-left:10px;
+    padding-right:10px;
+}
+#NotificationPanel QListWidget::item:hover {
+    background-color: #FFDAB9;
+    border-radius:15px;
+}
+
+#messageList {
+  background-color:white;
+}

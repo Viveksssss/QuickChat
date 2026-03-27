@@ -1,0 +1,332 @@
+/* ====== Light StyleSheet v1.0 ====== */
+
+/* ---------- 通用 ---------- */
+QWidget {
+    outline: none;
+    font-family: "Microsoft YaHei", "PingFang SC", "Segoe UI", sans-serif;
+}
+
+/* ---------- 登录 / 注册 / 忘记密码 背景 ---------- */
+#loginScreen,
+#registerScreen,
+#ForgotScreen,
+#FotgotScreen {                       /* 兼容你笔误 */
+    border-image: none;
+    background: #FFFFFF;
+}
+
+/* ---------- 头部卡片 ---------- */
+#headerLabel {
+    background: #F5F5F5;
+    border: 1px solid #E0E0E0;
+    border-radius: 12px;
+}
+
+/* ---------- 输入框 ---------- */
+#accountEdit,
+#passwordEdit,
+#emailEdit,
+#passwordSure,
+#securityCode,
+#newPasswordEdit,
+#confirmNewPasswordEdit,
+#remarkEdit,
+#searchEdit {
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 14px;
+    color: #212121;
+}
+#accountEdit:focus,
+#passwordEdit:focus,
+#emailEdit:focus,
+#securityCode:focus,
+#newPasswordEdit:focus,
+#confirmNewPasswordEdit:focus,
+#remarkEdit:focus,
+#searchEdit:focus {
+    border-color: #2196F3;
+}
+
+/* ---------- 主按钮 ---------- */
+#loginBtn,
+#registerBtn2,
+#cancelBtn,
+#acceptBtn,
+#cancleBtn,
+#addButton,
+#sendButton {
+    background: #2196F3;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 6px 16px;
+}
+#loginBtn:hover,
+#registerBtn2:hover,
+#cancelBtn:hover,
+#acceptBtn:hover,
+#cancleBtn:hover,
+#addButton:hover,
+#sendButton:hover {
+    background: #42A5F5;
+}
+#loginBtn:pressed,
+#registerBtn2:pressed,
+#cancelBtn:pressed,
+#acceptBtn:pressed,
+#cancleBtn:pressed,
+#addButton:pressed,
+#sendButton:pressed {
+    background: #1E88E5;
+}
+
+/* ---------- 文字按钮 ---------- */
+#registerBtn1,
+#forgotLabel {
+    background: transparent;
+    border: none;
+    color: #2196F3;
+    font-weight: bold;
+}
+#registerBtn1:hover,
+#forgotLabel:hover {
+    color: #FF5252;
+}
+
+/* ---------- 复选框 ---------- */
+#agreeCheck {
+    font-size: 12px;
+    color: #757575;
+}
+#agreeCheck::indicator {
+    width: 16px;
+    height: 16px;
+}
+#agreeCheck::indicator:unchecked {
+    image: url(:/Resources/login/unchecked.png);
+}
+#agreeCheck::indicator:checked {
+    image: url(:/Resources/login/checked.png);
+}
+#agreeCheck::indicator:unchecked:hover {
+    image: url(:/Resources/login/unchecked-hover.png);
+}
+#agreeCheck::indicator:checked:hover {
+    image: url(:/Resources/login/checked-hover.png);
+}
+
+/* ---------- 验证码按钮 ---------- */
+#getSecurityCode {
+    background: #9E9E9E;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 6px;
+    font-size: 12px;
+    padding: 4px 10px;
+}
+#getSecurityCode:hover {
+    background: #BDBDBD;
+}
+#getSecurityCode:pressed {
+    background: #757575;
+}
+
+/* ---------- 关闭按钮 ---------- */
+#closeBtn {
+    image: url(:/Resources/login/close.png);
+}
+#closeBtn:hover {
+    image: url(:/Resources/login/close-hover.png);
+}
+
+/* ---------- 工具提示 ---------- */
+QToolTip {
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 6px;
+    color: #212121;
+    padding: 4px 8px;
+}
+
+/* ---------- 主列表 ---------- */
+#friendsList,
+#messagesList,
+#newsList,
+#resultList {
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    outline: none;
+}
+#friendsList::item,
+#messagesList::item,
+#newsList::item,
+#resultList::item {
+    padding: 8px 12px;
+    border-bottom: 1px solid #F5F5F5;
+}
+#friendsList::item:hover,
+#messagesList::item:hover,
+#newsList::item:hover,
+#resultList::item:hover {
+    background: #F5F5F5;
+    border-radius: 0;
+}
+#friendsList::item:selected,
+#messagesList::item:selected,
+#newsList::item:selected,
+#resultList::item:selected {
+    background: #E3F2FD;
+    color: #1976D2;
+}
+
+/* ---------- 通知面板 ---------- */
+#NotificationPanel {
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 12px;
+}
+#NotificationPanel QLabel {
+    color: #212121;
+    font-size: 14px;
+    font-weight: 500;
+    padding-left: 20px;
+}
+#NotificationPanel QListWidget {
+    background: transparent;
+    border: none;
+}
+#NotificationPanel QListWidget::item {
+    border-bottom: 1px solid #F5F5F5;
+    padding: 10px;
+}
+#NotificationPanel QListWidget::item:hover {
+    background: #F5F5F5;
+    border-radius: 8px;
+}
+
+/* ---------- 顶部工具栏按钮 ---------- */
+#findButton,
+#newsBtn,
+#foldBtn,
+#fileButton,
+#imageButton,
+#videoButton,
+#audioButton,
+#emojiButton,
+#captureButton,
+#searchButton {
+    background: transparent;
+    border: none;
+    border-radius: 8px;
+}
+#findButton:hover,
+#newsBtn:hover,
+#foldBtn:hover,
+#fileButton:hover,
+#imageButton:hover,
+#videoButton:hover,
+#audioButton:hover,
+#emojiButton:hover,
+#captureButton:hover,
+#searchButton:hover {
+    background: #F5F5F5;
+}
+#findButton:pressed,
+#newsBtn:pressed,
+#foldBtn:pressed,
+#fileButton:pressed,
+#imageButton:pressed,
+#videoButton:pressed,
+#audioButton:pressed,
+#emojiButton:pressed,
+#captureButton:pressed,
+#searchButton:pressed {
+    background: #E0E0E0;
+}
+
+/* ---------- 输入区域 ---------- */
+#textEdit {
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 20px;
+    padding: 8px 12px;
+}
+
+/* ---------- 滚动条 ---------- */
+QScrollBar:vertical {
+    background: #F5F5F5;
+    width: 6px;
+    border-radius: 3px;
+}
+QScrollBar::handle:vertical {
+    background: #C0C0C0;
+    border-radius: 3px;
+}
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    height: 0;
+    border: none;
+}
+
+/* ---------- 分割线 ---------- */
+#splitter::handle {
+    background: #E0E0E0;
+}
+
+/* ---------- 状态标签 ---------- */
+#registerTitle,
+#labelForHeader {
+    font-size: 16px;
+}
+#registerTitle[state='normal'],
+#labelForHeader[state='normal'] {
+    color: #2196F3;
+}
+#registerTitle[state='error'],
+#labelForHeader[state='error'] {
+    color: #FF5252;
+}
+
+/* ---------- 其他 ---------- */
+#logo {
+    border-image: none;
+    background: transparent;
+}
+#logoTitle {
+    font-size: 20px;
+    color: #2196F3;
+}
+
+#emojiMenu {
+    border-radius: 12px;
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+}
+
+/* 好友请求项 */
+#FriendsNewsItem_AcceptButton {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+}
+#FriendsNewsItem_AcceptButton:hover {
+    background: #66BB6A;
+}
+#FriendsNewsItem_RejectButton {
+    background: #FF5252;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+}
+#FriendsNewsItem_RejectButton:hover {
+    background: #FF7676;
+}

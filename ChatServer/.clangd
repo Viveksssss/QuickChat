@@ -1,0 +1,6 @@
+# .clangd - C++23 配置
+CompileFlags:
+  # C++23标准标志
+  Add:
+    - -std=c++23          # Clang当前对C++23的标志
+    - -stdlib=libc++      # 使用libc++标准库（推荐）
