@@ -58,7 +58,11 @@ void FriendsModel::addFriend(const FriendItem &friendItem)
 void FriendsModel::addPreFriend(const FriendItem &friendItem)
 {
     beginInsertRows(QModelIndex(),0,0);
+<<<<<<< HEAD
     _friends.prepend(friendItem);
+=======
+    _friends.append(friendItem);
+>>>>>>> origin/main
     endInsertRows();
 }
 

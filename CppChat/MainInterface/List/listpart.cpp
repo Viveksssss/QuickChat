@@ -1,5 +1,9 @@
 #include "listpart.h"
+<<<<<<< HEAD
 #include "../../../Properties/signalrouter.h"
+=======
+#include "../../../../Properties/signalrouter.h"
+>>>>>>> origin/main
 
 #include <QVBoxLayout>
 

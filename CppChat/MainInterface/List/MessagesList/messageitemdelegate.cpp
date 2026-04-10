@@ -1,6 +1,10 @@
 #include "messageitemdelegate.h"
 #include "../FriendsList/frienditem.h"
+<<<<<<< HEAD
 #include "../../../Properties/signalrouter.h"
+=======
+#include "../../../../Properties/signalrouter.h"
+>>>>>>> origin/main
 #include "messageslistpart.h"
 #include "messagesmodel.h"
 #include <QFile>

@@ -456,8 +456,13 @@ bool DataBase::createOrUpdateConversations(const std::vector<ConversationItem> &
     QSqlQuery query(_db);
     query.prepare(R"(
         INSERT OR REPLACE INTO conversations
+<<<<<<< HEAD
         (uid, to_uid, from_uid, create_time, update_time, name, icon, status, deleted, pined, processed)
         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+=======
+        (uid, to_uid, from_uid, create_time, update_time, name, icon, status, delted, pined,processed)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+>>>>>>> origin/main
     )");
 
     QDateTime now = QDateTime::currentDateTime();
@@ -524,7 +529,11 @@ bool DataBase::createOrUpdateConversations(const std::vector<std::shared_ptr<Con
     QSqlQuery query(_db);
     query.prepare(R"(
         INSERT OR REPLACE INTO conversations
+<<<<<<< HEAD
         (uid, to_uid, from_uid, create_time, update_time, name, icon, status, deleted, pined, processed, env)
+=======
+        (uid, to_uid, from_uid, create_time, update_time, name, icon, status, delted, pined,processed,env)
+>>>>>>> origin/main
         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
     )");
 

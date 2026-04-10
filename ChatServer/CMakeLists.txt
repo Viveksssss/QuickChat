@@ -6,11 +6,16 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_DEBUG ${CMAKE_SOURCE_DIR})
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_RELEASE ${CMAKE_SOURCE_DIR})
 
 cmake_policy(SET CMP0167 NEW)
+<<<<<<< HEAD
 
 find_package(PkgConfig REQUIRED)
 find_package(Boost REQUIRED)
 find_package(absl REQUIRED COMPONENTS strings base)
 find_library(MYSQLPP_LIB mysqlpp REQUIRED)
+=======
+find_package(PkgConfig REQUIRED)
+find_package(Boost REQUIRED)
+>>>>>>> origin/main
 #
 # find_packageckage(Boost 1.70 REQUIRED COMPONENTS filesystem system)
 
@@ -22,6 +27,10 @@ pkg_check_modules(JSON REQUIRED REQUIRED IMPORTED_TARGET nlohmann_json)
 pkg_check_modules(GRPC REQUIRED REQUIRED IMPORTED_TARGET grpc)
 pkg_check_modules(GRPCPP REQUIRED REQUIRED IMPORTED_TARGET grpc++)
 pkg_check_modules(PROTOBUF REQUIRED IMPORTED_TARGET protobuf)
+<<<<<<< HEAD
+=======
+pkg_check_modules(ABSL REQUIRED IMPORTED_TARGET absl_strings)
+>>>>>>> origin/main
 
 
 add_executable(ChatServer
@@ -51,13 +60,22 @@ target_link_libraries(${PROJECT_NAME} PRIVATE PkgConfig::JSON)
 target_link_libraries(${PROJECT_NAME} PRIVATE PkgConfig::GRPC)
 target_link_libraries(${PROJECT_NAME} PRIVATE PkgConfig::GRPCPP)
 target_link_libraries(${PROJECT_NAME} PRIVATE PkgConfig::PROTOBUF)
+<<<<<<< HEAD
 target_link_libraries(${PROJECT_NAME} PRIVATE absl::strings)
+=======
+target_link_libraries(${PROJECT_NAME} PRIVATE PkgConfig::ABSL)
+>>>>>>> origin/main
 target_link_libraries(${PROJECT_NAME} PRIVATE PkgConfig::REDIS)
 target_link_libraries(${PROJECT_NAME} PRIVATE PkgConfig::MYSQL)
 target_link_libraries(${PROJECT_NAME} PRIVATE PkgConfig::SPEEDLOG)
 target_link_libraries(${PROJECT_NAME} PRIVATE ${MYSQLPP_LIBRARIES})
+<<<<<<< HEAD
 target_link_libraries(${PROJECT_NAME} PRIVATE mysqlpp)
 
+=======
+
+target_link_libraries(${PROJECT_NAME} PRIVATE /usr/lib/libmysqlpp.so)
+>>>>>>> origin/main
 set(NO_WARNING_FILES
     grpc/message.grpc.cc
     grpc/message.grpc.h

@@ -25,7 +25,11 @@
 #include <QMimeDatabase>
 #include <QDir>
 #include <QStaticText>
+<<<<<<< HEAD
 #include "../../../../database.h"
+=======
+#include <../../../../database.h>
+>>>>>>> origin/main
 #include "../../../../usermanager.h"
 #include "../MessageArea/messagearea.h"
 #include "../InputArea/inputarea.h"

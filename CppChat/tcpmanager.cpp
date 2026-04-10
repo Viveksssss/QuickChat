@@ -817,12 +817,19 @@ void TcpManager::do_send_data(RequestType requestType, QByteArray data)
     out.setByteOrder(QDataStream::BigEndian);
 
     out << id << len;
+<<<<<<< HEAD
     // 将数据追加到 block 中
     block.append(data);
 
     // 如果正在发送，直接入队
     if (_pending){
         _queue.enqueue(block);
+=======
+
+    // 如果正在发送，直接入队
+    if (_pending){
+        _queue.enqueue(data);
+>>>>>>> origin/main
         return;
     }
 

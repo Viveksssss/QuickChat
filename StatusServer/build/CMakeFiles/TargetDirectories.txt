@@ -1,3 +1,0 @@
-/home/vivek/Codes/Qt/StatusServer/build/CMakeFiles/StatusServer.dir
-/home/vivek/Codes/Qt/StatusServer/build/CMakeFiles/edit_cache.dir
-/home/vivek/Codes/Qt/StatusServer/build/CMakeFiles/rebuild_cache.dir

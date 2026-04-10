@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include "Session.h"
 #include "../server/LogicSystem.h"
 #include <spdlog/spdlog.h>
@@ -6,10 +7,18 @@
 unsigned char ToHex(int x) {
     return x > 9 ? x + 55 : x + 48;
 }
+=======
+#include "../session/Session.h"
+#include "../server/LogicSystem.h"
+
+// 10进制转16进制（字符串形式）
+unsigned char ToHex(int x) { return x > 9 ? x + 55 : x + 48; }
+>>>>>>> origin/main
 
 // 16进制字符串转10进制
 unsigned char FromHex(unsigned char x) {
     unsigned char y;
+<<<<<<< HEAD
     if (x >= '0' && x <= '9') {
         y = x - '0';
     } else if (x >= 'a' && x <= 'f') {
@@ -19,10 +28,21 @@ unsigned char FromHex(unsigned char x) {
     } else {
         assert(0);
     }
+=======
+    if (x >= '0' && x <= '9')
+        y = x - '0';
+    else if (x >= 'a' && x <= 'f')
+        y = x - 'a' + 10;
+    else if (x >= 'A' && x <= 'F')
+        y = x - 'A' + 10;
+    else
+        assert(0);
+>>>>>>> origin/main
     return y;
 }
 
 // 编码
+<<<<<<< HEAD
 std::string UrlEncode(std::string const &str) {
     std::string temp = "";
     std::size_t length = str.size();
@@ -32,6 +52,17 @@ std::string UrlEncode(std::string const &str) {
             || (str[i] == '~')) {
             temp += str[i];
         } else if (str[i] == ' ') {
+=======
+std::string UrlEncode(const std::string &str) {
+    std::string temp = "";
+    std::size_t length = str.size();
+    for (std::size_t i = 0; i < length; ++i) {
+        if (std::isalnum(static_cast<unsigned char>(str[i])) || str[i] == '=' ||
+            (str[i] == '-') || (str[i] == '_') || (str[i] == '.') ||
+            (str[i] == '~'))
+            temp += str[i];
+        else if (str[i] == ' ') {
+>>>>>>> origin/main
             temp += '+';
         } else {
             temp += '%';
@@ -43,29 +74,55 @@ std::string UrlEncode(std::string const &str) {
 }
 
 // 解析
+<<<<<<< HEAD
 std::string UrlDecode(std::string const &str) {
     std::string temp = "";
     for (std::size_t i = 0; i < str.size(); ++i) {
         if (str[i] == '+') {
             temp += ' ';
         } else if (str[i] == '%') {
+=======
+std::string UrlDecode(const std::string &str) {
+    std::string temp = "";
+    for (std::size_t i = 0; i < str.size(); ++i) {
+        if (str[i] == '+')
+            temp += ' ';
+        else if (str[i] == '%') {
+>>>>>>> origin/main
             assert(i + 2 < str.size());
             unsigned char high = FromHex(str[++i]);
             unsigned char low = FromHex(str[++i]);
             temp += ((high << 4) + low);
+<<<<<<< HEAD
         } else {
             temp += str[i];
         }
+=======
+        } else
+            temp += str[i];
+>>>>>>> origin/main
     }
     return temp;
 }
 
+<<<<<<< HEAD
 Session::Session(boost::asio::io_context &ioc) : _socket(ioc) { }
 
 void Session::Start() {
     http::async_read(_socket, _buffer, _request,
         [self = shared_from_this()](boost::system::error_code const &ec,
             std::size_t bytes_transferred) {
+=======
+Session::Session(boost::asio::io_context &ioc)
+    : _socket(ioc) {}
+
+void Session::Start() {
+
+    http::async_read(
+        _socket, _buffer, _request,
+        [self = shared_from_this()](const boost::system::error_code &ec,
+                                    std::size_t bytes_transferred) {
+>>>>>>> origin/main
             try {
                 if (ec) {
                     SPDLOG_ERROR("Error reading request: {}", ec.message());
@@ -81,9 +138,13 @@ void Session::Start() {
         });
 }
 
+<<<<<<< HEAD
 net::ip::tcp::socket &Session::GetSocket() {
     return _socket;
 }
+=======
+net::ip::tcp::socket &Session::GetSocket() { return _socket; }
+>>>>>>> origin/main
 
 void Session::CheckDeadLine() {
     auto self = shared_from_this();
@@ -91,6 +152,7 @@ void Session::CheckDeadLine() {
         [self](beast::error_code ec) { ec = self->_socket.close(ec); });
 }
 
+<<<<<<< HEAD
 void Session::DeadlineCancel() {
     _deadlineTimer.cancel();
 }
@@ -101,6 +163,17 @@ void Session::WriteResponse() {
             boost::system::error_code ec, std::size_t bytes_transferred) {
             ec = self->_socket.shutdown(
                 net::ip::tcp::socket::shutdown_send, ec);
+=======
+void Session::DeadlineCancel() { _deadlineTimer.cancel(); }
+
+void Session::WriteResponse() {
+    http::async_write(
+        _socket, _response,
+        [self = shared_from_this()](boost::system::error_code ec,
+                                    std::size_t bytes_transferred) {
+            ec =
+                self->_socket.shutdown(net::ip::tcp::socket::shutdown_send, ec);
+>>>>>>> origin/main
             self->DeadlineCancel();
         });
 }
@@ -143,8 +216,13 @@ void Session::HandleRequest() {
     _response.keep_alive(false);
     if (_request.method() == http::verb::get) {
         ParseGetParam();
+<<<<<<< HEAD
         bool success = LogicSystem::GetInstance()->HandleGet(
             _get_url, shared_from_this());
+=======
+        bool success =
+            LogicSystem::GetInstance()->HandleGet(_get_url, shared_from_this());
+>>>>>>> origin/main
         if (!success) {
             HandleHeaders(false);
         } else {
@@ -163,8 +241,13 @@ void Session::HandleRequest() {
     }
 }
 
+<<<<<<< HEAD
 void Session::HandleHeaders(
     bool success, std::string const &type, std::string const &body) {
+=======
+void Session::HandleHeaders(bool success, const std::string &type,
+                            const std::string &body) {
+>>>>>>> origin/main
     _response.set(http::field::content_type, type + ";charset=utf-8");
     if (!success) {
         _response.result(http::status::not_found);

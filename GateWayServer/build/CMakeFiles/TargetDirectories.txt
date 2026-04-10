@@ -1,3 +1,0 @@
-/home/vivek/Codes/Qt/GateWayServer/build/CMakeFiles/GateWayServer.dir
-/home/vivek/Codes/Qt/GateWayServer/build/CMakeFiles/edit_cache.dir
-/home/vivek/Codes/Qt/GateWayServer/build/CMakeFiles/rebuild_cache.dir

@@ -4,7 +4,12 @@
 #include <QBuffer>
 #include <QJsonObject>
 #include <span>
+<<<<<<< HEAD
 #include "./tcpmanager.h"
+=======
+#include <../../../../tcpmanager.h>
+
+>>>>>>> origin/main
 
 void UserManager::SetName(const QString &name)noexcept
 {
@@ -71,7 +76,11 @@ void UserManager::SetBaseInfo(std::shared_ptr<UserInfo>info) noexcept
     // this->_uid = info->id;
     this->_email = info->email;
     this->_desc = info->desc;
+<<<<<<< HEAD
     this->_sex = info->sex;
+=======
+    this->_sex = info->status;
+>>>>>>> origin/main
     this->_name = info->name;
     this->_icon = info->avatar;
     SetIcon(info->avatar);

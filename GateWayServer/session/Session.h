@@ -4,17 +4,26 @@
 #include "../global/const.h"
 #include <memory>
 
+<<<<<<< HEAD
 namespace net = boost::asio;
 namespace beast = boost::beast;
 namespace http = boost::beast::http;
 
+=======
+>>>>>>> origin/main
 class Session : public std::enable_shared_from_this<Session> {
     friend class LogicSystem;
 
 public:
+<<<<<<< HEAD
     Session(boost::asio::io_context &ioc);
     void Start();
     net::ip::tcp::socket &GetSocket();
+=======
+    Session(boost::asio::io_context& ioc);
+    void Start();
+    net::ip::tcp::socket& GetSocket();
+>>>>>>> origin/main
 
 private:
     void CheckDeadLine();
@@ -22,17 +31,28 @@ private:
     void WriteResponse();
     void ParseGetParam();
     void HandleRequest();
+<<<<<<< HEAD
     void HandleHeaders(bool success, std::string const &type = "text/plain",
         std::string const &body = "");
 
+=======
+    void HandleHeaders(bool success, const std::string& type = "text/plain", const std::string& body = "");
+    
+>>>>>>> origin/main
 private:
     // 套接字
     net::ip::tcp::socket _socket;
     // 定时器
+<<<<<<< HEAD
     net::steady_timer _deadlineTimer{
         _socket.get_executor(), std::chrono::seconds(30)};
     // 缓冲区
     beast::flat_buffer _buffer{8192};
+=======
+    net::steady_timer _deadlineTimer { _socket.get_executor(), std::chrono::seconds(30) };
+    // 缓冲区
+    beast::flat_buffer _buffer { 8192 };
+>>>>>>> origin/main
     // 请求
     http::request<http::dynamic_body> _request;
     // 响应
@@ -42,4 +62,8 @@ private:
     std::unordered_map<std::string, std::string> _get_params;
 };
 
+<<<<<<< HEAD
 #endif
+=======
+#endif
+>>>>>>> origin/main

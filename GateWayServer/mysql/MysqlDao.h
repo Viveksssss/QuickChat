@@ -30,11 +30,19 @@
  */
 
 class MysqlPool {
+<<<<<<< HEAD
 public:
     MysqlPool(std::string const &url, std::string const &user,
         std::string const &password, std::string const &schedma,
         std::string const &port = "3306",
         int poolSize = std::thread::hardware_concurrency());
+=======
+  public:
+    MysqlPool(const std::string &url, const std::string &user,
+              const std::string &password, const std::string &schedma,
+              const std::string &port = "3306",
+              int poolSize = std::thread::hardware_concurrency());
+>>>>>>> origin/main
 
     std::unique_ptr<mysqlpp::Connection> GetConnection() noexcept;
     void ReturnConnection(std::unique_ptr<mysqlpp::Connection> conn) noexcept;
@@ -44,7 +52,11 @@ public:
     long long GetLastOperateTime();
     ~MysqlPool();
 
+<<<<<<< HEAD
 private:
+=======
+  private:
+>>>>>>> origin/main
     int64_t _last_operate_time;
     int _failed_count;
     std::string _schedma;
@@ -68,6 +80,7 @@ struct UserInfo {
 };
 
 class MysqlDao {
+<<<<<<< HEAD
 public:
     MysqlDao();
     ~MysqlDao();
@@ -79,6 +92,19 @@ public:
         UserInfo &userInfo);
 
 private:
+=======
+  public:
+    MysqlDao();
+    ~MysqlDao();
+    int TestUidAndEmail(const std::string &uid, const std::string &email);
+    int RegisterUser(const std::string &name, const std::string &email,
+                     const std::string &password);
+    int ResetPassword(const std::string &email, const std::string &password);
+    bool CheckPwd(const std::string &user, const std::string &password,
+                  UserInfo &userInfo);
+
+  private:
+>>>>>>> origin/main
     std::unique_ptr<MysqlPool> _pool;
 };
 

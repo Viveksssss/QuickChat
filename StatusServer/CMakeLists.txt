@@ -33,7 +33,11 @@ pkg_check_modules(JSON REQUIRED REQUIRED IMPORTED_TARGET nlohmann_json)
 pkg_check_modules(GRPC REQUIRED REQUIRED IMPORTED_TARGET grpc)
 pkg_check_modules(GRPCPP REQUIRED REQUIRED IMPORTED_TARGET grpc++)
 pkg_check_modules(PROTOBUF REQUIRED IMPORTED_TARGET protobuf)
+<<<<<<< HEAD
 # pkg_check_modules(ABSL REQUIRED IMPORTED_TARGET absl_strings)
+=======
+pkg_check_modules(ABSL REQUIRED IMPORTED_TARGET absl_strings)
+>>>>>>> origin/main
 
 
 target_link_libraries(${PROJECT_NAME} PRIVATE Boost::headers)
@@ -41,7 +45,11 @@ target_link_libraries(${PROJECT_NAME} PRIVATE PkgConfig::JSON)
 target_link_libraries(${PROJECT_NAME} PRIVATE PkgConfig::GRPC)
 target_link_libraries(${PROJECT_NAME} PRIVATE PkgConfig::GRPCPP)
 target_link_libraries(${PROJECT_NAME} PRIVATE PkgConfig::PROTOBUF)
+<<<<<<< HEAD
 # target_link_libraries(${PROJECT_NAME} PRIVATE PkgConfig::ABSL)
+=======
+target_link_libraries(${PROJECT_NAME} PRIVATE PkgConfig::ABSL)
+>>>>>>> origin/main
 target_link_libraries(${PROJECT_NAME} PRIVATE PkgConfig::REDIS)
 # target_link_libraries(${PROJECT_NAME} PRIVATE Boost::filesystem Boost::system)
 target_link_libraries(${PROJECT_NAME} PRIVATE PkgConfig::MYSQL)

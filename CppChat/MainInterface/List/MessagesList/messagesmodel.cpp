@@ -2,7 +2,11 @@
 
 #include <QLabel>
 #include <algorithm>
+<<<<<<< HEAD
 #include "../../../database.h"
+=======
+#include "../../../../database.h"
+>>>>>>> origin/main
 
 
 MessagesModel::MessagesModel(QObject *parent)
@@ -76,7 +80,11 @@ void MessagesModel::addMessage(const ConversationItem &messageItem)
 void MessagesModel::addPreMessage(const ConversationItem &messageItem)
 {
     beginInsertRows(QModelIndex(),0,0);
+<<<<<<< HEAD
     _messages.prepend(messageItem);
+=======
+    _messages.append(messageItem);
+>>>>>>> origin/main
     endInsertRows();
 }
 

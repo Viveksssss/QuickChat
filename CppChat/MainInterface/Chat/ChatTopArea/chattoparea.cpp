@@ -25,7 +25,11 @@
 #include <QFileDialog>
 #include <QButtonGroup>
 #include <QBuffer>
+<<<<<<< HEAD
 #include "../../../Properties/signalrouter.h"
+=======
+#include <../../../../Properties/signalrouter.h>
+>>>>>>> origin/main
 
 QString pixmapToBase64(const QPixmap &pixmap)
 {

@@ -4,8 +4,13 @@
 #include "frienditem.h"
 #include "../../../Properties/global.h"
 #include "../../../Properties/signalrouter.h"
+<<<<<<< HEAD
 #include "../../../tcpmanager.h"
 #include "../../../usermanager.h"
+=======
+#include "../../../../tcpmanager.h"
+#include "../../../../usermanager.h"
+>>>>>>> origin/main
 
 
 
@@ -180,23 +185,35 @@ void FriendsListPart::do_loading_users()
 
 void FriendsListPart::do_add_friend_to_list(std::shared_ptr<UserInfo>info)
 {
+<<<<<<< HEAD
     // 先检查是否已存在，避免重复添加
     if (friendsModel->indexFromUid(info->id).isValid()) {
         return;
     }
     friendsModel->addFriend(FriendItem(info->id, info->status,info->sex,info->name,info->avatar,info->desc ));
     UserManager::GetInstance()->AddFriendToList(info);
+=======
+    friendsModel->addFriend(FriendItem(info->id, info->status,info->sex,info->name,info->avatar,info->desc ));
+    UserManager::GetInstance()->AddFriendToList(info);
+    do_loading_users();
+>>>>>>> origin/main
 }
 
 void FriendsListPart::do_add_friends_to_list(const std::vector<std::shared_ptr<UserInfo>> &list)
 {
     for (auto&item:list){
+<<<<<<< HEAD
         // 先检查是否已存在，避免重复添加
         if (friendsModel->indexFromUid(item->id).isValid()) {
             continue;
         }
         friendsModel->addFriend(FriendItem(item->id, item->status,item->sex,item->name,item->avatar,item->desc ));
     }
+=======
+        friendsModel->addFriend(FriendItem(item->id, item->status,item->sex,item->name,item->avatar,item->desc ));
+    }
+    do_loading_users();
+>>>>>>> origin/main
 }
 
 void FriendsListPart::do_change_friend_status(int uid,int status)

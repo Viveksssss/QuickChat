@@ -300,11 +300,19 @@
 #include "messageslistpart.h"
 #include "messageitemdelegate.h"
 #include "messagesmodel.h"
+<<<<<<< HEAD
 #include "../../../Properties/global.h"
 #include "../../../Properties/signalrouter.h"
 #include "../../../tcpmanager.h"
 #include "../../../usermanager.h"
 #include "../../../database.h"
+=======
+#include "../../../../Properties/global.h"
+#include "../../../../Properties/signalrouter.h"
+#include "../../../../tcpmanager.h"
+#include "../../../../usermanager.h"
+#include "../../../../database.h"
+>>>>>>> origin/main
 
 #include <QHBoxLayout>
 #include <QLabel>
@@ -463,6 +471,17 @@ void MessagesListPart::do_data_ready(const std::vector<std::shared_ptr<Conversat
 
     // 数据到达后，执行初始加载
     do_loading_messages();
+<<<<<<< HEAD
+=======
+
+    // 同时调用原有的处理函数
+    do_add_messages_to_list(list);
+
+    // 确保视图完全刷新
+    messagesList->update();
+    messagesList->viewport()->update();
+    messagesList->repaint();
+>>>>>>> origin/main
 }
 
 bool MessagesListPart::eventFilter(QObject *obj, QEvent *event)
@@ -504,7 +523,14 @@ void MessagesListPart::do_loading_messages()
 
     isLoading = true;
 
+<<<<<<< HEAD
     // 不清空现有数据，直接追加新数据
+=======
+    // 清空现有数据，确保从正确位置开始加载
+    messagesModel->getList().clear();
+
+    // 动态获取信息
+>>>>>>> origin/main
     for(auto& info : messages) {
         messagesModel->addMessage(*info);
     }
@@ -512,6 +538,10 @@ void MessagesListPart::do_loading_messages()
     // 强制视图刷新
     messagesList->update();
     messagesList->viewport()->update();
+<<<<<<< HEAD
+=======
+    messagesList->scrollToTop();  // 滚动到顶部确保内容可见
+>>>>>>> origin/main
 
     QTimer::singleShot(1000, this, [this](){
         this->setLoading(false);
@@ -535,7 +565,13 @@ void MessagesListPart::do_add_messages_to_list(const std::vector<std::shared_ptr
         return;
     }
 
+<<<<<<< HEAD
     // 不清空现有数据，直接追加新数据
+=======
+    // 清空现有数据
+    messagesModel->getList().clear();
+
+>>>>>>> origin/main
     for (auto& item : list) {
         messagesModel->addMessage(*item);
     }
@@ -543,9 +579,17 @@ void MessagesListPart::do_add_messages_to_list(const std::vector<std::shared_ptr
     // 强制视图刷新
     messagesList->update();
     messagesList->viewport()->update();
+<<<<<<< HEAD
 
     // 标记数据已就绪
     dataReady = true;
+=======
+    messagesList->scrollToTop();
+
+    // 标记数据已就绪
+    dataReady = true;
+
+>>>>>>> origin/main
 }
 
 void MessagesListPart::do_change_message_status(int uid,int status)
@@ -560,9 +604,15 @@ void MessagesListPart::do_change_peer(int peerUid)
 {
     auto index = messagesModel->indexFromUid(peerUid);
     if (index.isValid()){
+<<<<<<< HEAD
         messagesModel->setData(index, true, MessagesModel::RedDotRole);
         messagesList->setCurrentIndex(index);   // 切换列表索引至当前好友
         DataBase::GetInstance().updateMessagesStatus(peerUid, 1);
+=======
+        messagesModel->setData(index,true,MessagesModel::MessageRole::RedDotRole);
+        messagesList->setCurrentIndex(index);   // 切换列表索引至当前好友
+        DataBase::GetInstance().updateMessagesStatus(peerUid,1);
+>>>>>>> origin/main
         // emit SignalRouter::GetInstance().on_change_peer(peerUid);
     }else{
         ConversationItem conv;
@@ -626,16 +676,23 @@ void MessagesListPart::do_get_message(const MessageItem &message)
         DataBase::GetInstance().storeMessage(message);
         // 不存在会话，那就创建插入会话
         std::shared_ptr<UserInfo> info = DataBase::GetInstance().getFriendInfoPtr(peerUid);
+<<<<<<< HEAD
         if (!info) {
             // 如果获取不到好友信息，使用默认值或跳过
             qDebug() << "Friend info not found for uid:" << peerUid;
             return;
         }
+=======
+>>>>>>> origin/main
         ConversationItem conv;
         // 这里故意反过来，对于自己来说所有的好友都是to,自己是from
         conv.to_uid = message.from_id;
         conv.from_uid = message.to_id;
+<<<<<<< HEAD
         conv.icon = info->avatar;
+=======
+        conv.icon = info ? info->avatar : "";
+>>>>>>> origin/main
         if (message.content.type == MessageType::TextMessage){
             conv.message = message.content.data.toString();
         }else{
@@ -696,7 +753,11 @@ void MessagesListPart::syncConversations()
             val["icon"] = item.icon;
             val["status"] = item.status;
             val["deleted"] = item.deleted;
+<<<<<<< HEAD
             val["pined"] = item.pined;
+=======
+            val["pined"] = item.deleted;
+>>>>>>> origin/main
             val["processed"] = item.processed;
             array.append(val);
         }
