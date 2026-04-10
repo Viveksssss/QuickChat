@@ -1,0 +1,168 @@
+syntax = "proto3";
+package message;
+
+service VarifyService{
+    rpc GetSecurityCode(GetSecurityCodeRequest) returns (GetSecurityCodeResponse){}
+}
+
+message GetSecurityCodeRequest{
+    string email = 1;
+}
+
+message GetSecurityCodeResponse{
+    int32 error = 1;
+    string email = 2;
+    string code = 3;
+}
+
+message GetChatServerRequest{
+    int32 uid = 1;
+}
+
+message GetChatServerResponse{
+    int32 error = 1;
+    string host = 2;
+    string port =3;
+    string token = 4;
+}
+
+message LoginRequest{
+    int32 uid=1;
+    string token=2;
+}
+
+message LoginResponse{
+    int32 error=1;
+    int32 uid=2;
+    string token=3;
+}
+
+service StatusService{
+    rpc GetChatServer(GetChatServerRequest)returns (GetChatServerResponse){}
+    rpc Login(LoginRequest) returns (LoginResponse){}
+}
+
+message AddFriendRequest{
+    int32 fromUid=1;
+    string name=2;
+    string desc = 3;
+    int32 toUid=4;
+    int32 sex = 5;
+    string icon =6;
+}
+
+message AddFriendResponse{
+    int32 error=1;
+    int32 fromUid=2;
+    int32 toUid=3;
+}
+
+message ReplyFriendRequest{
+    int32 fromUid = 1;
+    bool agree = 2;
+    int32 toUid=3;
+}
+
+message ReplyFriendResponse{
+    int32 error=1;
+    int32 fromUid=2;
+    int32 toUid=3;
+}
+
+message SendChatMessageRequest{
+    int32 fromUid = 1;
+    int32 toUid = 2;
+    string message = 3;
+}
+
+message SendChatMessageResponse{
+    int32 error = 1;
+    int32 fromUid = 2;
+    int32 toUid = 3;
+}
+
+message AuthFriendRequest{
+    int32 fromUid = 1;
+    int32 toUid = 2;
+}
+
+message AuthFriendResponse{
+    int32 error = 1;
+    int32 fromUid = 2;
+    int32 toUid = 3;
+}
+
+message TextChatData{
+    string msgId = 1;
+    string msgContent = 2;
+}
+
+message TextChatMessageRequest{
+    int32 fromUid = 1;
+    int32 toUid = 2;
+    bytes data = 3;
+}
+message TextChatMessageResponse{
+    int32 error = 1;
+}
+
+message NotifyMakeFriendsRequest{
+    int32 fromUid = 1;
+    int32 toUid = 2;
+    int32 type = 3;
+    int32 fromSex = 4;
+    string fromIcon = 5;
+    string fromName = 6;
+    string message = 7;
+    int32 fromStatus = 8;
+    string fromDesc = 9;
+    string fromEmail = 10;
+}
+
+message NotifyMakeFriendsResponse{
+    int32 error=1;
+    int32 fromUid=2;
+    int32 toUid=3;
+}
+
+message NotifyFriendOnlineRequest{
+    int32 fromUid = 1;
+    int32 toUid = 2;
+    int32 type = 3;
+    string name = 4;
+    string message = 5;
+    string icon = 6;
+    string time = 7;
+}
+message NotifyFriendOnlineResponse{
+    int32 error=1;
+}
+
+message KickUserReq{
+    int32 uid = 1;
+}
+
+message KickUserRsp{
+    int32 error = 1;
+    int32 uid = 2;
+}
+
+
+service ChatServer{
+    // 通知消息
+    rpc NotifyMakeFriends(NotifyMakeFriendsRequest)returns(NotifyMakeFriendsResponse){}
+    // 通知上线
+    rpc NotifyFriendOnline(NotifyFriendOnlineRequest)returns(NotifyFriendOnlineResponse){}
+    // 后端调用，通知另一个服务器消息。
+    rpc NotifyAddFriend(AddFriendRequest)returns(AddFriendResponse){}
+    // 添加好友回包
+    rpc ReplyAddFriend(ReplyFriendRequest)returns(ReplyFriendResponse){}
+    // 发送文本消息
+    rpc SendChatMessage(SendChatMessageRequest)returns(SendChatMessageResponse){}
+    // 通知好友添加请求
+    rpc NotifyAuthFriend(AuthFriendRequest)returns(AuthFriendResponse){}
+    // 通知文本消息
+    rpc NotifyTextChatMessage(TextChatMessageRequest)returns(TextChatMessageResponse){}
+    // 通知踢人
+    rpc NotifyKickUser(KickUserReq)returns(KickUserRsp){}
+}

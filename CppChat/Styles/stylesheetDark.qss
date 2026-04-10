@@ -1,0 +1,107 @@
+/* Dark Theme */
+#loginScreen, #registerScreen {
+  border-image: url(:/Resources/loginBackground-dark.png) 0 0 0 0 stretch stretch;
+  background-color: #1E1E1E;
+}
+
+#headerLabel {
+  border: 2px solid #444444;
+  border-radius: 40px;
+  background: #2D2D2D;
+  color: #E0E0E0;
+}
+
+#accountEdit, #passwordEdit, #mailEdit, #passwordSure, #securityCode {
+  border: 1px solid #444444;
+  border-radius: 8px;
+  background: #2D2D2D;
+  color: #E0E0E0;
+  padding: 8px;
+}
+
+#accountEdit:focus, #passwordEdit:focus, #mailEdit:focus, #passwordSure:focus, #securityCode:focus {
+  border: 1px solid #48b2e5;
+  background: #3A3A3A;
+}
+
+#agreeCheck {
+  font-size: 10px;
+  color: #B0B0B0;
+}
+
+#agreeCheck::indicator {
+  width: 16px;
+  height: 16px;
+}
+
+#agreeCheck::indicator:unchecked {
+  image: url(:/Resources/unchecked-dark.png);
+}
+
+#agreeCheck::indicator:checked {
+  image: url(:/Resources/checked-dark.png);
+}
+
+#agreeCheck::indicator:unchecked:hover {
+  image: url(:/Resources/unchecked-hover-dark.png);
+}
+
+#agreeCheck::indicator:checked:hover {
+  image: url(:/Resources/checked-hover-dark.png);
+}
+
+#loginBtn, #registerBtn2, #cancelBtn {
+  text-align: center;
+  border-radius: 8px;
+  background-color: #1976D2;
+  color: #FFFFFF;
+  font-size: 14px;
+  border: none;
+  padding: 10px;
+}
+
+#loginBtn:hover, #registerBtn2:hover, #cancelBtn:hover {
+  background-color: #2196F3;
+  color: #FFFFFF;
+}
+
+#loginBtn:pressed, #registerBtn2:pressed, #cancelBtn:pressed {
+  background-color: #0D47A1;
+  color: #FFFFFF;
+}
+
+#registerBtn1, #forgotLabel {
+  background-color: transparent;
+  border: none;
+  color: #64B5F6;
+  font-weight: bold;
+}
+
+#registerBtn1:hover {
+  color: #E57373;
+}
+
+#forgotLabel:hover {
+  color: #F06292;
+}
+
+#getSecurityCode {
+  text-align: center;
+  width: 50px;
+  height: 27px;
+  border-radius: 5px;
+  background-color: #455A64;
+  color: #E0E0E0;
+  font-size: 14px;
+  border: none;
+}
+
+#getSecurityCode:hover {
+  background-color: #546E7A;
+  color: #FFFFFF;
+}
+
+#getSecurityCode:pressed {
+  background-color: #37474F;
+  color: #E0E0E0;
+}

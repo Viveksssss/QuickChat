@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/vivek/Codes/Qt/GateWayServer/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

@@ -1,0 +1,16 @@
+syntax = "proto3";
+package message;
+
+service VarifyService{
+    rpc GetSecurityCode(GetSecurityCodeRequest) returns (GetSecurityCodeResponse){}
+}
+
+message GetSecurityCodeRequest{
+    string email = 1;
+}
+
+message GetSecurityCodeResponse{
+    int32 error = 1;
+    string email = 2;
+    string code = 3;
+}

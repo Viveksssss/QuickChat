@@ -1,0 +1,16 @@
+# ninja log v7
+5	3056	1775486468257928626	CMakeFiles/GateWayServer.dir/mysql/MysqlManager.cpp.o	be8790b9956932cf
+8	3217	1775486468260538916	CMakeFiles/GateWayServer.dir/redis/DistributedLock.cpp.o	d795b496156939e6
+2	5570	1775486468255079807	CMakeFiles/GateWayServer.dir/server/AsioPool.cpp.o	9b6077269a11f377
+2	7561	1775486468254542201	CMakeFiles/GateWayServer.dir/grpc/message.pb.cc.o	b1acf14b82c51e4c
+2	8496	1775486468254860943	CMakeFiles/GateWayServer.dir/global/const.cpp.o	b884e4d9355a4e55
+2	9894	1775486468254074726	CMakeFiles/GateWayServer.dir/grpc/message.grpc.pb.cc.o	30e5b85ce41ab3b8
+5	10175	1775486468258033895	CMakeFiles/GateWayServer.dir/mysql/MysqlDao.cpp.o	95544e6568ba67de
+5	11190	1775486468257774933	CMakeFiles/GateWayServer.dir/redis/RedisManager.cpp.o	94204040aa0f6c66
+8	11728	1775486468260074652	CMakeFiles/GateWayServer.dir/grpc/VerifyClient.cpp.o	c7a0732f9e3ee5bd
+5	13404	1775486468257498030	CMakeFiles/GateWayServer.dir/session/Session.cpp.o	e086c6db1bdc22f1
+2	13885	1775486468254711091	CMakeFiles/GateWayServer.dir/grpc/StatusClient.cpp.o	7111fb5fda67a9b
+2	16222	1775486468255205882	CMakeFiles/GateWayServer.dir/server/LogicSystem.cpp.o	7b148fd4569b6783
+5	5568	1775486531432288331	CMakeFiles/GateWayServer.dir/main.cpp.o	22d9fa16bccb69f3
+5	4551	1775486555311992001	CMakeFiles/GateWayServer.dir/server/GateWayServer.cpp.o	8385e7b64e0c0640
+4552	5062	1775486559858935630	/home/vivek/Codes/Qt/GateWayServer/GateWayServer	d58ed5464c96983

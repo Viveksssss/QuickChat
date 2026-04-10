@@ -1,0 +1,2 @@
+{"created_at_ms":1775488922291,"session_id":"session-1775488922291-0","type":"session_meta","updated_at_ms":1775488922291,"version":1}
+{"message":{"blocks":[{"text":"当前目录下的sidebarpart就是有关侧边通知栏的。目前的问题是内容显示的布局有点问题，比如头像被遮挡，内容超出边框等等。同时电解接受等按钮没有反应没有效果。","type":"text"}],"role":"user"},"type":"message"}

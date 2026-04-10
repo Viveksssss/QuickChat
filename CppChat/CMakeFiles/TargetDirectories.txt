@@ -1,0 +1,9 @@
+/mnt/S/home/vivek/Codes/Qt/CppChat/CMakeFiles/CppChat.dir
+/mnt/S/home/vivek/Codes/Qt/CppChat/CMakeFiles/edit_cache.dir
+/mnt/S/home/vivek/Codes/Qt/CppChat/CMakeFiles/rebuild_cache.dir
+/mnt/S/home/vivek/Codes/Qt/CppChat/CMakeFiles/list_install_components.dir
+/mnt/S/home/vivek/Codes/Qt/CppChat/CMakeFiles/install.dir
+/mnt/S/home/vivek/Codes/Qt/CppChat/CMakeFiles/install/local.dir
+/mnt/S/home/vivek/Codes/Qt/CppChat/CMakeFiles/install/strip.dir
+/mnt/S/home/vivek/Codes/Qt/CppChat/CMakeFiles/CppChat_autogen_timestamp_deps.dir
+/mnt/S/home/vivek/Codes/Qt/CppChat/CMakeFiles/CppChat_autogen.dir
